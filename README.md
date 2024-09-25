@@ -27,9 +27,8 @@ python predict.py [img_dir]
 
 ### Metrics
 
-| Model         | Description                        | Default Value |
+| Model         | mAP50                        | Default Value |
 |-----------------|------------------------------------|---------------|
-| yolov9c_detection| Path to the input file             | `None`        |
-| `--output`      | Path to save the output file       | `results/`    |
-| `--model`       | Model to use for processing        | `resnet50`    |
-| `--gpu`         | Enable GPU usage (0 for CPU, 1 for GPU) | `0`       |
+| <b> yolov9c_detection </b> | 0.995              | `None`        |
+| <b> yolov9c_segmentation </b> | 0.975       | `results/`    |
+
