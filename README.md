@@ -27,8 +27,8 @@ python predict.py [img_dir]
 
 ### Metrics
 
-| Model         | mAP50                        | Default Value |
+| Model         | mAP50                        | Recall |
 |-----------------|------------------------------------|---------------|
-| <b> yolov9c_detection </b> | 0.995              | `None`        |
-| <b> yolov9c_segmentation </b> | 0.975       | `results/`    |
+| <b> yolov9c_detection </b> | 0.995              | 1        |
+| <b> yolov9c_segmentation </b> | 0.975       | 0.929   |
 
