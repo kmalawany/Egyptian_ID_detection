@@ -1,4 +1,4 @@
-# Egyption ID detection and segmentation 
+# Egyptian ID detection and segmentation 
 
 
 ### How to use
@@ -15,15 +15,15 @@ python predict.py [img_dir]
 ### Note
 <ul>
 <li> The detection model predicts front and back of the ID, however I wasn't able to find a dataset to detect the text on the back of the ID,
-therefore we are only using prediction of front side to feed to the segmentation model </li>
-<li> For better results take a good quality image of the card with good lighting </li>
+therefore we are only using prediction of front side to feed to the segmentation model. </li>
+<li> For better results take a good quality image of the card with good lighting. </li>
 </ul>
 
 ### Models
 <ul>
-<li> trained yolov9c-detection on 420 images of Egyptian IDs with 2 classes; front side and back side  </li>
-<li> I used pytesract to detect the orientation of the text on the card then rotating the image by the predicted angle </li>
-<li> trained yolov9c-segmentation on 368 images of Egyptian IDs with 7 classes; Code, city, family name, name, neighborhood, number, state  </li>
+<li> trained yolov9c-detection on 420 images of Egyptian IDs with 2 classes; front side and back side.  </li>
+<li> I used pytesract to detect the orientation of the text on the card then rotating the image by the predicted angle. </li>
+<li> trained yolov9c-segmentation on 368 images of Egyptian IDs with 7 classes; Code, city, family name, name, neighborhood, number, state.  </li>
 </ul>
 
 ### Training scripts  
