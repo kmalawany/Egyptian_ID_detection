@@ -1,6 +1,5 @@
 from pytesseract import Output
 import pytesseract
-import argparse
 import imutils
 import cv2
 
