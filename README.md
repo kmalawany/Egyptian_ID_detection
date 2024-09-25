@@ -25,8 +25,8 @@ therefore we are only using prediction of front side to feed to the segmentation
 <li> I used pytesract to detect the orientation of the text on the card then rotating the image by the predicted angle </li>
 <li> trained yolov9c-segmentation on 368 images of Egyptian IDs with 7 classes; Code, city, family name, name, neighborhood, number, state  <li>
 </ul>
-### Training scripts
-  
+
+### Training scripts  
 <ul>
   <li> ID detection Model: ( https://colab.research.google.com/drive/14MT7JPbMQXcBrJqedGgD80ly9kEh6kB2?usp=sharing ) </li>
   <li> ID segmantation Model: ( https://colab.research.google.com/drive/1tDKYR0OPQ858JLPrQGSDLxi6gMw840Kg?usp=sharing ) </li>
