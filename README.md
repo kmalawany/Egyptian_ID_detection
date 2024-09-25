@@ -12,7 +12,9 @@ pip install -r requirements.txt
 ```
 python predict.py [img_dir]
 ```
-
+### Note
+The detection model predicts front and back of the ID, however I wasn't able to find a dataset to detect the text on the back of the ID,
+therefore we are only using prediction of front side to feed to the segmentation model
 ### Training scripts
 <ul>
   <li> ID detection Model: ( https://colab.research.google.com/drive/14MT7JPbMQXcBrJqedGgD80ly9kEh6kB2?usp=sharing ) </li>
@@ -27,10 +29,10 @@ python predict.py [img_dir]
 
 ### Metrics
 
-| Model         | mAP50                        | Recall |
-|-----------------|------------------------------------|---------------|
-| <b> yolov9c_detection </b> | 0.995              | 1        |
-| <b> yolov9c_segmentation </b> | 0.975       | 0.929   |
+| Model            | mAP50                     | Recall | Precision |
+|-----------------|----------------------------|--------|-----------|
+| <b> yolov9c_detection </b> | 0.995           |   1    |  0.998    |
+| <b> yolov9c_segmentation </b> | 0.975       | 0.929   |  0.95     |
 
 ### Detect and correct allignment 
 #### I used pytesract to detect the orientation of the text on the card then rotating the image by the predicted angle
