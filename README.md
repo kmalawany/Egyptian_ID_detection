@@ -21,9 +21,9 @@ therefore we are only using prediction of front side to feed to the segmentation
 
 ### Model
 <ul>
-<li> trained yolov9c-detection on 420 images of Egyptian IDs with 2 classes; front side and back side  <li>
+<li> trained yolov9c-detection on 420 images of Egyptian IDs with 2 classes; front side and back side  </li>
 <li> I used pytesract to detect the orientation of the text on the card then rotating the image by the predicted angle </li>
-<li> trained yolov9c-segmentation on 368 images of Egyptian IDs with 7 classes; Code, city, family name, name, neighborhood, number, state  <li>
+<li> trained yolov9c-segmentation on 368 images of Egyptian IDs with 7 classes; Code, city, family name, name, neighborhood, number, state  </li>
 </ul>
 
 ### Training scripts  
