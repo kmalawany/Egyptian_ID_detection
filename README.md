@@ -32,3 +32,5 @@ python predict.py [img_dir]
 | <b> yolov9c_detection </b> | 0.995              | 1        |
 | <b> yolov9c_segmentation </b> | 0.975       | 0.929   |
 
+### Detect and correct allignment 
+#### I used pytesract to detect the orientation of the text on the card then rotating the image by the predicted angle
