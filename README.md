@@ -19,7 +19,7 @@ therefore we are only using prediction of front side to feed to the segmentation
 <li> For better results take a good quality image of the card with good lighting </li>
 </ul>
 
-### Model
+### Models
 <ul>
 <li> trained yolov9c-detection on 420 images of Egyptian IDs with 2 classes; front side and back side  </li>
 <li> I used pytesract to detect the orientation of the text on the card then rotating the image by the predicted angle </li>
