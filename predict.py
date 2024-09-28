@@ -15,8 +15,6 @@ def main():
     segment_model = YOLO('yolo_segmentation.pt')
 
     results = detection_model.predict(image, imgsz=640, conf=0.50)
-    bbox = 0
-    box_coordinates = 0
     boxes = results[0].boxes.xyxy
     classes = results[0].boxes.cls
 
